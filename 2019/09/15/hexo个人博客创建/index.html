@@ -25,7 +25,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '7.4.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
@@ -43,8 +43,8 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: 'Copy',
@@ -57,9 +57,9 @@
 
   <meta name="description" content="title: hexo个人博客创建步骤date: 2019-09-15 18:50:15tags: 第一步 安装node.js 查看安装的版本 安装cnpm工具npm install -g cnpm –registry=https://registry.npm.taobao.org  第二步 利用cnpm安装hexo框架 第三步 新建blog文件夹（日后博客相关的目录放在这里边） 第四步 然后进">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo个人博客">
+<meta property="og:title" content="陈*个人博客">
 <meta property="og:url" content="http://yoursite.com/2019/09/15/hexo个人博客创建/index.html">
-<meta property="og:site_name" content="Hexo个人博客">
+<meta property="og:site_name" content="陈*个人博客">
 <meta property="og:description" content="title: hexo个人博客创建步骤date: 2019-09-15 18:50:15tags: 第一步 安装node.js 查看安装的版本 安装cnpm工具npm install -g cnpm –registry=https://registry.npm.taobao.org  第二步 利用cnpm安装hexo框架 第三步 新建blog文件夹（日后博客相关的目录放在这里边） 第四步 然后进">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/09/15/hexo个人博客创建/3B24B7D1242E4E1EB58EF7272E7D4A25">
@@ -87,7 +87,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/09/15/hexo个人博客创建/434968880E484F669283364573C7C835">
 <meta property="og:updated_time" content="2019-09-15T12:10:46.644Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo个人博客">
+<meta name="twitter:title" content="陈*个人博客">
 <meta name="twitter:description" content="title: hexo个人博客创建步骤date: 2019-09-15 18:50:15tags: 第一步 安装node.js 查看安装的版本 安装cnpm工具npm install -g cnpm –registry=https://registry.npm.taobao.org  第二步 利用cnpm安装hexo框架 第三步 新建blog文件夹（日后博客相关的目录放在这里边） 第四步 然后进">
 <meta name="twitter:image" content="http://yoursite.com/2019/09/15/hexo个人博客创建/3B24B7D1242E4E1EB58EF7272E7D4A25">
   <link rel="canonical" href="http://yoursite.com/2019/09/15/hexo个人博客创建/">
@@ -104,7 +104,7 @@
   };
 </script>
 
-  <title> | Hexo个人博客</title>
+  <title> | 陈*个人博客</title>
   
 
 
@@ -143,7 +143,7 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
   <div class="container use-motion">
     <div class="headband"></div>
-
+	<a href="https://github.com/chendalei123de56/chendalei123de56.github.io.git" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-meta">
@@ -151,7 +151,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo个人博客</span>
+        <span class="site-title">陈*个人博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -185,6 +185,28 @@
       
       
         
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+      
+      
+      
+        
         <li class="menu-item menu-item-archives">
       
     
@@ -192,11 +214,36 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Search</a>
+      </li>
+    
   </ul>
 
-    
-
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -210,6 +257,8 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+            
+
           <div id="content" class="content">
             
 
@@ -224,11 +273,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chen dalei">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568653358803&di=b1967960e22f342d4f9a9c0c6ce0f03d&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181014%2Fcb69470e99bb42908520aee3a1842b07.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo个人博客">
+      <meta itemprop="name" content="陈*个人博客">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -255,6 +304,14 @@
             
           
 
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
           
 
         </div>
@@ -292,7 +349,42 @@
     
     
     
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="chen dalei wechat" style="width: 200px; max-width: 100%;">
+  <div>Subscribe to my blog by scanning my public wechat account.</div>
+</div>
+
+      
         
+      
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+        
+      
+      <div style="display: inline-block">
+        <img src="/你可以对我打赏了哦" alt="chen dalei reward_comment">
+        <p>reward_comment</p>
+      </div>
+        
+      
+      <div style="display: inline-block">
+        <img src="https://huaban.com/go/?pin_id=425573460.jpg" alt="chen dalei Alipay">
+        <p>Alipay</p>
+      </div>
+        
+      
+      <div style="display: inline-block">
+        <img src="https://huaban.com/pins/425573460.jpg" alt="chen dalei Bitcoin">
+        <p>Bitcoin</p>
+      </div>
+
+  </div>
+</div>
+
       
 
       <footer class="post-footer">
@@ -311,6 +403,10 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/09/16/新科宅/" rel="prev" title="新科宅">
+                  新科宅 <i class="fa fa-chevron-right"></i>
+                </a>
               
             </div>
           </div>
@@ -366,6 +462,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568653358803&di=b1967960e22f342d4f9a9c0c6ce0f03d&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181014%2Fcb69470e99bb42908520aee3a1842b07.jpeg"
+      alt="chen dalei">
   <p class="site-author-name" itemprop="name">chen dalei</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -374,14 +473,88 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
     
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+        </a>
+      </div>
+    
   </nav>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/yourname" title="GitHub &rarr; https://github.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://weibo.com/yourname" title="Weibo &rarr; https://weibo.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+    
+  </div>
 
 
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.baidu.com" title="http://www.baidu.com" rel="noopener" target="_blank">百度</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="http://sports.sina.com.cn/nba" title="http://sports.sina.com.cn/nba" rel="noopener" target="_blank">新浪nba1</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="http://sports.sina.com.cn/nba" title="http://sports.sina.com.cn/nba" rel="noopener" target="_blank">新浪nba2</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="http://sports.sina.com.cn/nba" title="http://sports.sina.com.cn/nba" rel="noopener" target="_blank">新浪nba3</a>
+        </li>
+      
+    </ul>
+  </div>
 
       </div>
 
@@ -403,9 +576,32 @@
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.0</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.0</div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+  
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+  
+</div>
 
 
 
@@ -426,11 +622,17 @@
   
 
 
+    
+    
+  
   <script src="/lib/anime.min.js?v=3.1.0"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script defer src="/lib/three/three.min.js"></script>
+  <script defer src="true"></script>
 <script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
-<script src="/js/schemes/muse.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+
 <script src="/js/next-boot.js?v=7.4.0"></script>
 
 
@@ -443,6 +645,8 @@
 
 
 
+
+  <script src="/js/local-search.js?v=7.4.0"></script>
 
 
 

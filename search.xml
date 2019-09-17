@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[新科宅]]></title>
+    <url>%2F2019%2F09%2F16%2F%E6%96%B0%E7%A7%91%E5%AE%85%2F</url>
+    <content type="text"><![CDATA[第三方阿萨德 列表1 列表2 a 子列表1 b 子列表2 列表3 百度 字体是斜线的字体是不是加粗了是撒打算 12weqeqeqwqeewqe 我的内容是引用的]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>导航</tag>
+        <tag>分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2019%2F09%2F15%2Fhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[title: hexo个人博客创建步骤date: 2019-09-15 18:50:15tags: 第一步 安装node.js 查看安装的版本 安装cnpm工具npm install -g cnpm –registry=https://registry.npm.taobao.org 第二步 利用cnpm安装hexo框架 第三步 新建blog文件夹（日后博客相关的目录放在这里边） 第四步 然后进入到新建的blog文件中 第五步 使用hexo init命令初始化一个博客 第六步 启动博客 新建一篇文章 然后编辑文章的内容，然后重新clean一下和重新生成一下，然后重新启动博客，可在浏览器查看效果 第七步__在github上创建一个仓库，命名规范github用户名.github.io 第八步 下载一个git插件 第九步 修改_config.yml文件 第十步 部署到远端hexo d输入github用户名和密码部署成功通过==chendalei123de56.github.io==路径访问 第十一步 修改主题 安装主题到指定目录 修改配置文件]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F09%2F15%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
